@@ -1,0 +1,19 @@
+.footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: var(--spacing-md) 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-sm);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin: 0;
+}

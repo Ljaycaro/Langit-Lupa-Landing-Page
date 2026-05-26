@@ -1,0 +1,33 @@
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.socialBtn:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.label {
+  line-height: 1;
+}

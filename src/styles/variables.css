@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0b5ed7;
+  --color-secondary: #6c757d;
+  --color-dark: #212529;
+  --color-light: #f8f9fa;
+  --color-white: #ffffff;
+  --color-discord: #5865f2;
+  --color-facebook: #1877f2;
+  --color-youtube: #ff0000;
+  --color-twitter: #1da1f2;
+
+  --font-heading: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  --border-radius: 0.5rem;
+  --max-width: 1140px;
+}
