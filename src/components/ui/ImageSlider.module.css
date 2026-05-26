@@ -1,0 +1,76 @@
+.slider {
+  width: 100%;
+}
+
+.viewport {
+  position: relative;
+
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 15px solid #fbc230;
+  box-shadow: 4px 4px 12px #828281;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ background: transparent;
+  color: white;           /* white arrow */
+  border: 2px solid rgb(248, 248, 248);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  scale: 1.2
+  
+}
+
+.arrow:hover {
+ color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.arrowLeft {
+  left: 8px;
+}
+
+.arrowRight {
+  right: 8px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.dotActive {
+  background: #fff;
+}

@@ -6,6 +6,7 @@ export default function Landing() {
     <main className={styles.landing}>
       <Hero />
       <CallToAction />
+      
       <YouTubeGallery />
       <Footer />
     </main>

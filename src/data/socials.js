@@ -9,18 +9,13 @@ export const socialLinks = [
     platform: 'facebook',
     icon: 'F',
     label: 'Facebook',
-    href: 'https://facebook.com/your-page',
+    href: 'https://facebook.com/your-paghttps://www.facebook.com/ninetysixstudiose',
   },
   {
     platform: 'youtube',
     icon: 'Y',
     label: 'YouTube',
-    href: 'https://youtube.com/@your-channel',
+    href: 'https://www.youtube.com/watch?v=1cciedCL_zc',
   },
-  {
-    platform: 'twitter',
-    icon: 'X',
-    label: 'Twitter',
-    href: 'https://twitter.com/your-handle',
-  },
+
 ]

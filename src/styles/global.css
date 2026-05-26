@@ -16,6 +16,10 @@ body {
   background-color: var(--color-white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  background-image: url('../assets/background-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 img {

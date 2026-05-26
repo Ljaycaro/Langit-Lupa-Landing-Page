@@ -1,20 +1,194 @@
 .cta {
   padding: var(--spacing-lg) 0;
-  background: var(--color-light);
+  background: transparent;
 }
 
-.heading {
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.subheading {
+  font-family: var(--font-cta);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.mainHeading {
+  font-family: var(--font-cta);
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: var(--spacing-sm);
   color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.wishlistLink {
+  display: inline-block;
+  margin-bottom: var(--spacing-xs);
+  transition: transform 0.15s ease;
+}
+
+.wishlistLink:hover {
+  transform: scale(1.05);
+}
+
+.wishlistBtn {
+  height: 90px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(4px 4px 8px #7f8f9d);
+}
+
+.steamText {
+  font-family: var(--font-cta);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.cardsRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
 }
 
 .description {
-  font-size: 1.1rem;
+  font-family: var(--font-cta);
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-dark);
+  margin: var(--spacing-sm) 0 0 0;
+  line-height: 1.6;
+}
+
+.featuresRow {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  flex: 1;
+  min-width: 150px;
+  max-width: 280px;
+}
+
+.featureImg {
+  width: 90%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.featureLabel {
+  font-family: var(--font-cta);
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.trailerCard {
+  position: relative;
+  margin-top: var(--spacing-md);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.trailerLink {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.trailerThumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.trailerBtn {
+  position: absolute;
+  bottom: 0px;
+  left: 51.5%;
+  transform: translateX(-50%);
+  display: inline-block;
+  transition: transform 0.15s ease;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.trailerBtn img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+.trailerBtn:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.cardImage {
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.videoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-sm);
+  height: 100%;
+  min-height: 200px;
+}
+
+.videoTitle {
+  font-family: var(--font-cta);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-dark);
+}
+
+.videoDesc {
+  font-family: var(--font-cta);
+  font-size: 0.9rem;
   color: var(--color-secondary);
-  margin-bottom: var(--spacing-md);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: var(--spacing-sm);
 }
