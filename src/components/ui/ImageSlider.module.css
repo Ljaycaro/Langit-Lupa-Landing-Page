@@ -4,7 +4,6 @@
 
 .viewport {
   position: relative;
-
   border-radius: var(--border-radius);
   overflow: hidden;
   border: 15px solid #fbc230;
@@ -15,15 +14,20 @@
   width: 100%;
   height: auto;
   display: block;
-  
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
- background: transparent;
-  color: white;           /* white arrow */
+  background: transparent;
+  color: white;
   border: 2px solid rgb(248, 248, 248);
   width: 36px;
   height: 36px;
@@ -34,12 +38,11 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s ease;
-  scale: 1.2
-  
+  scale: 1.2;
 }
 
 .arrow:hover {
- color: white;
+  color: white;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -51,26 +54,39 @@
   right: 8px;
 }
 
-.dots {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
+.thumbStrip {
   display: flex;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background: transparent;
-  cursor: pointer;
+.thumb {
+  width: 128px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 2px solid transparent;
   padding: 0;
-  transition: background 0.2s ease;
+  cursor: pointer;
+  background: none;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.6;
 }
 
-.dotActive {
-  background: #fff;
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbActive {
+  border-color: #fbc230;
+  opacity: 1;
+}
+
+.thumb:hover {
+  opacity: 0.9;
 }
