@@ -38,7 +38,7 @@
   height: 90px;
   width: auto;
   display: block;
-  filter: drop-shadow(4px 4px 8px #7f8f9d);
+  filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.5));
 }
 
 .steamText {
@@ -110,7 +110,7 @@
   margin-top: var(--spacing-md);
   border-radius: var(--border-radius);
   overflow: hidden;
-  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(4px 6px 18px rgba(0, 0, 0, 0.5));
 }
 
 .trailerLink {
@@ -163,8 +163,46 @@
   width: auto;
   height: auto;
   display: block;
+  margin: 0 auto;
   border-radius: var(--border-radius);
-  filter: drop-shadow(4px 5px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(4px 6px 18px rgba(0, 0, 0, 0.5));
+}
+
+.imageCard {
+  /* no flex needed — margin auto handles centering */
+}
+
+.presskitWrapper {
+  position: relative;
+  width: fit-content;
+  margin: 1rem auto 0;
+  transform: translateX(-50px);   /* negative = left, positive = right */
+  scale: 1.2
+}
+
+.presskitLink {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.presskitLink:hover {
+  transform: scale(1.05);
+}
+
+.presskitLink img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.pointHand {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  scale: 2;
+  height: 50px;
+  width: auto;
+  pointer-events: none;
 }
 
 .videoCard {

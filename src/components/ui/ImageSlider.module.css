@@ -8,7 +8,7 @@
   border-radius: var(--border-radius);
   overflow: hidden;
   border: 15px solid #fbc230;
-  box-shadow: 4px 4px 12px #828281;
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 .slide {

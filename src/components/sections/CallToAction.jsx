@@ -7,6 +7,9 @@ import new_office from '../../assets/ui/new_office.png'
 import office_wars from '../../assets/ui/office_wars.png'
 import trailerThumb from '../../assets/Section-Images/trailer_thumbnail.png'
 import trailerBtn from '../../assets/ui/trailer_button.png'
+import presskitImg from '../../assets/ui/presskit.png'
+// TODO: Replace with '../assets/ui/point_hand.png' once file is added
+import pointHandImg from '../../assets/ui/point_hand.png'
 import styles from './CallToAction.module.css'
 
 const TRAILER_ID = '1cciedCL_zc'
@@ -31,7 +34,7 @@ export default function CallToAction() {
       </div>
       <div className={styles.cardsRow}>
         {ctaCards.map((card) => (
-          <div key={card.id} className={styles.card} style={card.offset}>
+          <div key={card.id} className={styles.card} style={{ ...card.offset, maxWidth: card.maxWidth }}>
             {card.type === 'slider' && (
               <>
                 <ImageSlider images={card.images} />
@@ -69,7 +72,7 @@ export default function CallToAction() {
                       <button
                         type="button"
                         className={styles.trailerBtn}
-                        style={{ filter: 'drop-shadow(4px 4px 12px #737373)' }}
+                        style={{ filter: 'drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.5))' }}
                         onClick={() => setTrailerOpen(true)}
                       >
                         <img src={trailerBtn} alt="Watch Trailer" />
@@ -80,7 +83,22 @@ export default function CallToAction() {
               </>
             )}
             {card.type === 'image' && (
-              <img src={card.image} alt={card.alt} className={styles.cardImage} />
+              <div className={styles.imageCard}>
+                <img src={card.image} alt={card.alt} className={styles.cardImage} />
+                {card.button && (
+                  <div className={styles.presskitWrapper}>
+                    <a
+                      href={card.button.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.presskitLink}
+                    >
+                      <img src={presskitImg} alt="Presskit" />
+                    </a>
+                    <img src={pointHandImg} alt="" className={styles.pointHand} />
+                  </div>
+                )}
+              </div>
             )}
             {card.type === 'video' && (
               <div className={styles.videoCard}>
